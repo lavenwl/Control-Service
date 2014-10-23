@@ -1,0 +1,111 @@
+body{
+	margin:0;
+	padding:0;
+	text-align:center;
+	background:url(../img/bg.png) no-repeat;
+	background-position:top
+}
+.login_container{
+	width:1000px;
+	height:840px;
+	margin:auto;
+
+	text-align:left;
+	position:absolute; 
+	left:50%; 
+	margin:0 0 0 -500px; 
+}
+.login_logo{
+	width:1000px;
+	height:200px;
+	margin-top:30px;
+	/*margin-left:200px;*/
+}
+.login_logo img{
+	width:131px;
+	height:144px;
+	margin-left:0px;
+}
+
+.info_enter{
+	width:330px;
+	height:229px;
+	margin-top:130px;
+	margin-left:650px;
+	text-align:center;
+	background:url(../img/login_Box.png) no-repeat;
+	background-position:-8px;
+}
+.info_enter .login_title{
+	width:100%;
+	height:30px;
+	text-align:center;
+	padding-top:45px;
+	padding-bottom:5px;
+	font-family:Arial;
+}
+.info_enter .login_title h4{font-size:22px;font-weight:bold;margin-top:0px;}
+.info_enter .login_text{
+	width:208px;
+	height:25px;
+	border:1px solid #ACAFAE;
+	margin:auto;
+	margin-top:5px;
+	overflow:hidden;
+	
+	
+}
+.info_enter .login_button{
+	width:100%;
+	height:30px;
+	margin-top:10px;
+	margin-bottom:3px;
+}
+.info_enter .login_button .login{
+	float:left;
+	width:100px;
+	height:30px;
+	border:0px;
+	background:url(../img/login_button.png) no-repeat;
+	background-position:-3px;
+	margin-left:60px;
+}
+.info_enter .login_button .reset{
+	float:left;
+	width:100px;
+	height:30px;
+	border:0px;
+	background:url(../img/login_reset.png) no-repeat;
+	background-position:-7px;
+	margin-left:11px;
+}
+
+
+
+.login_icon{
+	float:left;
+	margin-left:10px;
+	width:13px;
+	height:13px;
+	text-align:center;
+}
+.login_icon img{
+	position:relative;
+	top:5px;
+	left:-2px;
+}
+
+.login_text_in
+{
+	float:right;
+	width:175px;
+	height:32px;
+	
+}
+input	{
+	border:0px;
+	width:175px;
+	height:20px;
+	outline:none;
+	font-size:16px;
+}

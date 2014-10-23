@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    <struts>
+    	<package name="marketing_files" extends="struts-default" namespace="/marketing_files">
+    		<action name="jinru" class="com.fieldschina.marketing.action.WelcomeAction">
+    			<result name="success1">/WEB-INF/jsp2/login.jsp</result>
+    			<result name="success2">/WEB-INF/jsp2/main2.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="welcome" class="com.fieldschina.marketing.action.WelcomeAction">
+    			<result name="success1">/WEB-INF/jsp2/main.jsp</result>
+    			<result name="success2">/WEB-INF/jsp2/main2.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="login" class="com.fieldschina.marketing.action.LoginAction">
+    			<result name="success">/WEB-INF/jsp2/main.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="confirm" class="com.fieldschina.marketing.action.ConfirmAction">
+    			<result name="1" type="redirect">/marketing_files/rd14.action</result>
+    			<result name="2" type="redirect">/marketing_files/rd7x14.action</result>
+    			<result name="3" type="redirect">/marketing_files/dd2qswd.action</result>
+    			<result name="4" type="redirect">/marketing_files/dddd4d.action</result>
+    			<result name="5" type="redirect">/marketing_files/create_new.action</result>
+    			<result name="6" type="redirect">/marketing_files/thread_control.action</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="create_new" class="com.fieldschina.marketing.action.CreateNewAction">
+    			<result name="success">/WEB-INF/jsp2/create.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="thread_control" class="com.fieldschina.marketing.action.ThreadControlAction">
+    			<result name="success">/WEB-INF/jsp2/thread.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="startt" class="com.fieldschina.marketing.action.StartAction">
+    			<result name="success">/WEB-INF/jsp2/main.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="stopp" class="com.fieldschina.marketing.action.StopAction">
+    			<result name="success">/WEB-INF/jsp2/main.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="rd14" class="com.fieldschina.marketing.action.RegistedD14Action">
+    			<result name="success">/WEB-INF/jsp2/list.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="drd14" class="com.fieldschina.marketing.action.RegistedD14Action" method="download">
+    			<result name="success" type="redirect">/marketing_files/downloadFile.action?fileName=${fileName}</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="rd7x14" class="com.fieldschina.marketing.action.RegistedD7X14Action">
+    			<result name="success">/WEB-INF/jsp2/list.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="drd7x14" class="com.fieldschina.marketing.action.RegistedD7X14Action" method="download">
+    			<result name="success" type="redirect">/marketing_files/downloadFile.action?fileName=${fileName}</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="rud" class="com.fieldschina.marketing.action.RegistedUserDefinedAction">
+    			<result name="success">/WEB-INF/jsp2/list2.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="drud" class="com.fieldschina.marketing.action.RegistedUserDefinedAction" method="download">
+    			<result name="success" type="redirect">/marketing_files/downloadFile.action?fileName=${fileName}</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="dd2qswd" class="com.fieldschina.marketing.action.OrderEqules2No10DaysAction">
+    			<result name="success">/WEB-INF/jsp2/list.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="ddd2qswd" class="com.fieldschina.marketing.action.OrderEqules2No10DaysAction" method="download">
+    			<result name="success" type="redirect">/marketing_files/downloadFile.action?fileName=${fileName}</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="dddd4d" class="com.fieldschina.marketing.action.OrderEqules4Action">
+    			<result name="success">/WEB-INF/jsp2/list.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="ddddd4d" class="com.fieldschina.marketing.action.OrderEqules4Action" method="download">
+    			<result name="success" type="redirect">/marketing_files/downloadFile.action?fileName=${fileName}</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="oud" class="com.fieldschina.marketing.action.OrderUserDefinedAction">
+    			<result name="success">/WEB-INF/jsp2/list2.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="doud" class="com.fieldschina.marketing.action.OrderUserDefinedAction" method="download">
+    			<result name="success" type="redirect">/marketing_files/downloadFile.action?fileName=${fileName}</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="oudd" class="com.fieldschina.marketing.action.OrderBiggerUserDefinedAction">
+    			<result name="success">/WEB-INF/jsp2/list2.jsp</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="doudd" class="com.fieldschina.marketing.action.OrderBiggerUserDefinedAction" method="download">
+    			<result name="success" type="redirect">/marketing_files/downloadFile.action?fileName=${fileName}</result>
+    			<result name="error">/WEB-INF/jsp/error.jsp</result>
+    		</action>
+    		<action name="downloadFile" class="com.fieldschina.marketing.action.DownloadAction">
+				   <result name="success" type="stream">
+				
+				<!--设置为图片，其他类型见下-->
+				    <param name="contentType">image/jpeg;charset=ISO8859-1</param>
+				
+				<!--下载文件流-->
+				    <param name="inputName">inputStream</param>
+				
+				<!--添加参数，即就是下载的名称-->
+				    <param name="contentDisposition">attachment;filename="${downloadFileName}"</param>
+				
+				<!--缓存-->
+				    <param name="bufferSize">4096</param>
+				   </result>
+				   <result name="error">/WEB-INF/jsp/error.jsp</result>
+			 </action>
+    	</package>
+    </struts>

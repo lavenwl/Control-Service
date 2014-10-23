@@ -1,0 +1,70 @@
+* {
+	
+	padding: 0;
+}
+
+
+
+.clear {
+	clear: both;
+}
+
+form {
+	width: 406px;
+	margin: 20% auto auto 45%; 
+	/*
+	margin-top-width:240px;
+	margin-right-width:0px;
+	margin-bottom-width:0px;
+	margin-left-width:450px;*/
+	
+}
+
+legend {
+	display: none;
+}
+
+fieldset {
+	border: 0;
+}
+
+label {
+	width: 115px;
+	text-align: right;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 9px 0 0 0;
+	font-size: 16px;
+}
+
+input {
+	width: 180px;
+	display: block;
+	padding: 4px;
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	color: #3a3a3a;
+	font-family: Georgia, serif;
+}
+
+input[type=checkbox] {
+	width: 20px;
+	margin: 0;
+	display: inline-block;
+}
+
+.button {
+	/*background: url(../images/button-bg.png) repeat-x top center;*/
+	border: 1px solid #999;
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	width: 60px;
+	margin: 0 0 10px 0;
+}
+
+.button:hover {
+	background: white;
+	color: gray;
+}
